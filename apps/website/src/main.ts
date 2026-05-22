@@ -79,8 +79,8 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     <a href="#features">Features</a>
     <a href="#insights">Insights</a>
     <a href="#security">Security</a>
+    <a href="#connect">Connect</a>
   </nav>
-  <a class="header-cta" href="#download">Get notified</a>
 </header>
 
 <main id="top">
@@ -94,7 +94,6 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
         professional healthcare experience.
       </p>
       <div class="hero-actions" aria-label="Doser calls to action">
-        <a class="button button-primary" href="#download">Join the waitlist</a>
         <a class="button button-secondary" href="#product-tour">View the app</a>
       </div>
       <dl class="hero-stats" aria-label="Doser product highlights">
@@ -232,12 +231,25 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
 
   <section id="download" class="download-section" aria-labelledby="download-title">
     <div>
-      <span class="eyebrow">Coming soon</span>
       <h2 id="download-title">Bring more confidence to medication routines with Doser.</h2>
       <p>
         A clean, modern healthcare companion for tracking medicines, reminders, refills, and insights.
       </p>
     </div>
+  </section>
+
+  <section id="connect" class="section connect-section" aria-labelledby="connect-title">
+    <div class="section-heading section-heading-narrow">
+      <span class="eyebrow">Connect</span>
+      <h2 id="connect-title">Have a question or want to connect?</h2>
+      <p>
+        Reach out directly by email for conversations, feedback, or product inquiries.
+      </p>
+    </div>
+    <a class="connect-card" href="mailto:vidyarajeshmishra@gmail.com" aria-label="Email Doser at vidyarajeshmishra@gmail.com">
+      <span class="connect-label">Email</span>
+      <span class="connect-email">vidyarajeshmishra@gmail.com</span>
+    </a>
   </section>
 </main>
 

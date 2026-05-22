@@ -193,6 +193,7 @@ p {
 .hero-section,
 .section,
 .download-section,
+.connect-section,
 .site-footer {
   width: var(--container);
   margin-inline: auto;
@@ -453,7 +454,8 @@ p {
 .section-heading p,
 .insights-copy p,
 .care-card p,
-.download-section p {
+.download-section p,
+.connect-section p {
   color: #596579;
   font-size: clamp(1.02rem, 1.35vw, 1.16rem);
 }
@@ -682,6 +684,56 @@ p {
 
 .download-section .eyebrow::before {
   background: #ffffff;
+}
+
+.connect-section {
+  padding-top: 78px;
+  text-align: center;
+}
+
+.connect-section .section-heading {
+  margin-bottom: 26px;
+}
+
+.connect-card {
+  display: grid;
+  max-width: 720px;
+  gap: 8px;
+  margin: 0 auto;
+  padding: clamp(24px, 5vw, 38px);
+  border: 1px solid rgba(223, 231, 235, 0.92);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at top left, rgba(15, 138, 142, 0.12), transparent 22rem),
+    rgba(255, 255, 255, 0.88);
+  box-shadow: var(--shadow-sm);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease;
+}
+
+.connect-card:hover,
+.connect-card:focus-visible {
+  border-color: rgba(15, 138, 142, 0.34);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
+}
+
+.connect-label {
+  color: var(--primary-dark);
+  font-size: 0.82rem;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.connect-email {
+  overflow-wrap: anywhere;
+  color: var(--text-strong);
+  font-size: clamp(1.35rem, 3vw, 2.35rem);
+  font-weight: 900;
+  letter-spacing: -0.04em;
 }
 
 .site-footer {
