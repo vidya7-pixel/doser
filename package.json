@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "ready": "vp check && vp run -r test && vp run -r build",
+    "ready": "vp check && vp run --no-cache -r test && vp run --no-cache --filter '*' --filter '!advanceflux' build",
     "dev": "vp run website#dev",
     "build": "vp run website#build",
     "prepare": "vp config"
