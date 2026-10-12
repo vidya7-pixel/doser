@@ -6,11 +6,13 @@
   "scripts": {
     "dev": "vp dev",
     "build": "tsc && vp build",
+    "deploy": "wrangler deploy",
     "preview": "vp preview"
   },
   "devDependencies": {
     "typescript": "catalog:",
     "vite": "catalog:",
-    "vite-plus": "catalog:"
+    "vite-plus": "catalog:",
+    "wrangler": "catalog:"
   }
 }
