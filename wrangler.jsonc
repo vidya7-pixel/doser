@@ -1,0 +1,8 @@
+{
+  "name": "doser",
+  "compatibility_date": "2026-10-12",
+  "assets": {
+    "directory": "./apps/website/dist",
+    "html_handling": "drop-trailing-slash",
+  },
+}
