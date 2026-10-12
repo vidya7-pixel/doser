@@ -1,6 +1,6 @@
-# Vite+ Monorepo Starter
+# AdvanceFlux
 
-A starter for creating a Vite+ monorepo.
+The AdvanceFlux homepage and Doser product page.
 
 ## Development
 
@@ -16,14 +16,28 @@ vp run ready
 vp run -r test
 ```
 
-- Build the monorepo:
+- Build the website:
 
 ```bash
-vp run -r build
+vp run build
 ```
 
 - Run the development server:
 
 ```bash
-vp run dev
+vp dev
 ```
+
+The website is the default workspace for `vp dev`, `vp build`, and `vp preview`.
+The homepage is served at `/`, and the Doser page is at `/products/doser`.
+
+## Cloudflare Pages
+
+Run the production build from the repository root:
+
+- Build command: `vp run build`
+- Build output directory: `apps/website/dist`
+- Root directory: the repository root
+
+The build includes `index.html` and `products/doser/index.html`.
+See [Cloudflare Pages build configuration](https://developers.cloudflare.com/pages/configuration/build-configuration/).
